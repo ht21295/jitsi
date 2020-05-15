@@ -1,0 +1,425 @@
+2020-05-15 17:14:29.107 INFO: [64] org.jitsi.jigasi.SipGateway.incomingCallReceived().188 Incoming call received...
+2020-05-15 17:14:30.120 INFO: [65] org.jitsi.jigasi.SipGatewaySession.run().907 Using default JVB room name property siptest
+2020-05-15 17:14:30.165 INFO: [65] org.jitsi.jigasi.JvbConference.setXmppProvider().561 17217d3fff6@meeting.com.vn will use ProtocolProviderServiceJabberImpl(jigasi@meeting.com.vn (Jabber))
+2020-05-15 17:14:30.320 INFO: [67] impl.protocol.jabber.OperationSetBasicTelephonyJabberImpl.registrationStateChanged().125 Jingle : ON 
+2020-05-15 17:14:30.320 INFO: [67] org.jitsi.jigasi.JvbConference.registrationStateChanged().606 XMPP (17217d3fff6@meeting.com.vn): RegistrationStateChangeEvent[ oldState=Registering; newState=RegistrationState=Registering; reasonCode=-1; reason=null]
+2020-05-15 17:14:30.426 INFO: [71] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:14:55.425 INFO: [72] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:15:00.332 WARNING: [70] org.jivesoftware.smack.AbstractXMPPConnection.callConnectionClosedOnErrorListener() Connection XMPPTCPConnection[not-authenticated] (0) closed with error
+java.lang.IllegalStateException: PLAIN authentication already completed
+	at com.sun.security.sasl.PlainClient.evaluateChallenge(PlainClient.java:97)
+	at org.jivesoftware.smack.sasl.javax.SASLJavaXMechanism.evaluateChallenge(SASLJavaXMechanism.java:137)
+	at org.jivesoftware.smack.sasl.SASLMechanism.challengeReceived(SASLMechanism.java:245)
+	at org.jivesoftware.smack.SASLAuthentication.challengeReceived(SASLAuthentication.java:253)
+	at org.jivesoftware.smack.SASLAuthentication.authenticated(SASLAuthentication.java:274)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.parsePackets(XMPPTCPConnection.java:1116)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader.access$300(XMPPTCPConnection.java:1000)
+	at org.jivesoftware.smack.tcp.XMPPTCPConnection$PacketReader$1.run(XMPPTCPConnection.java:1016)
+	at java.lang.Thread.run(Thread.java:748)
+2020-05-15 17:15:00.335 SEVERE: [67] org.jitsi.jigasi.JvbConference.registrationStateChanged().600 Connection failed XMPP on 17217d3fff6@meeting.com.vn
+2020-05-15 17:15:00.336 INFO: [67] org.jitsi.jigasi.JvbConference.stop().521 17217d3fff6@meeting.com.vn is removing account Jabber:17217d3fff6@meeting.com.vn/17217d3fff6
+2020-05-15 17:15:00.336 INFO: [67] impl.protocol.jabber.OperationSetBasicTelephonyJabberImpl.registrationStateChanged().132 Jingle : OFF 
+2020-05-15 17:15:00.342 INFO: [73] org.jitsi.jigasi.SipGatewaySession.handleCallState().766 SIP call ended: CallPeerChangeEvent: type=CallPeerStatusChange oldV=net.java.sip.communicator.service.protocol.CallPeerState:Incoming Call newV=net.java.sip.communicator.service.protocol.CallPeerState:Disconnected for peer=2001 <2001@192.168.1.170>;status=Disconnected
+2020-05-15 17:15:00.343 INFO: [73] org.jitsi.jigasi.SipGatewaySession.sipCallEnded().507 Sip call ended: Call: id=1589537669050342062217 peers=0
+2020-05-15 17:15:00.343 SEVERE: [73] org.jitsi.jigasi.AbstractGateway.notifyCallEnded().132 Call resource not exists for session 17217d3fff6@meeting.com.vn
+2020-05-15 17:15:00.344 INFO: [73] org.jitsi.jigasi.SipGatewaySession.peerStateChanged().828 no-call-ctx SIP peer state: Disconnected
+2020-05-15 17:15:00.349 INFO: [74] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:15:11.584 INFO: [75] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:15:20.435 INFO: [76] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:15:45.426 INFO: [77] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+SLF4J: Class path contains multiple SLF4J bindings.
+SLF4J: Found binding in [jar:file:/usr/share/jigasi/lib/slf4j-jdk14-1.7.26.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: Found binding in [jar:file:/usr/share/jigasi/lib/slf4j-simple-1.6.1.jar!/org/slf4j/impl/StaticLoggerBinder.class]
+SLF4J: See http://www.slf4j.org/codes.html#multiple_bindings for an explanation.
+SLF4J: Actual binding is of type [org.slf4j.impl.JDK14LoggerFactory]
+2020-05-15 17:16:03.094 INFO: [10] org.jitsi.service.libjitsi.LibJitsi.log() Successfully started LibJitsi using as implementation: org.jitsi.impl.libjitsi.LibJitsiOSGiImpl
+2020-05-15 17:16:03.136 INFO: [10] impl.configuration.ConfigurationActivator.log() Using properties file configuration store.
+2020-05-15 17:16:03.143 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vendor=Private Build
+2020-05-15 17:16:03.143 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.java.launcher=SUN_STANDARD
+2020-05-15 17:16:03.143 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.management.compiler=HotSpot 64-Bit Tiered Compilers
+2020-05-15 17:16:03.144 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.impl.neomedia.transform.srtp.SRTPCryptoContext.checkReplay=false
+2020-05-15 17:16:03.144 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() os.name=Linux
+2020-05-15 17:16:03.144 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.boot.class.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/resources.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/rt.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jsse.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jce.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/charsets.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/jfr.jar:/usr/lib/jvm/java-8-openjdk-amd64/jre/classes
+2020-05-15 17:16:03.145 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.protocol.MIN_MEDIA_PORT_NUMBER=10000
+2020-05-15 17:16:03.150 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.util.logging.config.file=/etc/jitsi/jigasi/logging.properties
+2020-05-15 17:16:03.151 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.specification.vendor=Oracle Corporation
+2020-05-15 17:16:03.151 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.runtime.version=1.8.0_252-8u252-b09-1~18.04-b09
+2020-05-15 17:16:03.151 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() user.name=jigasi
+2020-05-15 17:16:03.151 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.configuration.USE_PROPFILE_CONFIG=true
+2020-05-15 17:16:03.151 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() user.language=en
+2020-05-15 17:16:03.151 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.impl.neomedia.transform.csrc.SsrcTransformEngine.dropMutedAudioSourceInReverseTransform=true
+2020-05-15 17:16:03.154 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.boot.library.path=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/amd64
+2020-05-15 17:16:03.154 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.media.MIN_PORT_NUMBER=10000
+2020-05-15 17:16:03.154 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.version=1.8.0_252
+2020-05-15 17:16:03.154 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() user.timezone=Asia/Ho_Chi_Minh
+2020-05-15 17:16:03.154 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.arch.data.model=64
+2020-05-15 17:16:03.155 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.endorsed.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/endorsed
+2020-05-15 17:16:03.156 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.cpu.isalist=
+2020-05-15 17:16:03.156 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.jnu.encoding=UTF-8
+2020-05-15 17:16:03.156 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() file.encoding.pkg=sun.io
+2020-05-15 17:16:03.157 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() file.separator=/
+2020-05-15 17:16:03.157 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.specification.name=Java Platform API Specification
+2020-05-15 17:16:03.157 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.class.version=52.0
+2020-05-15 17:16:03.158 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() user.country=US
+2020-05-15 17:16:03.159 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.media.DISABLE_VIDEO_SUPPORT=true
+2020-05-15 17:16:03.159 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.home=/usr/lib/jvm/java-8-openjdk-amd64/jre
+2020-05-15 17:16:03.159 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.info=mixed mode
+2020-05-15 17:16:03.159 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() os.version=5.0.0-23-generic
+2020-05-15 17:16:03.159 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() path.separator=:
+2020-05-15 17:16:03.159 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.version=25.252-b09
+2020-05-15 17:16:03.160 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.CONFIGURATION_FILE_IS_READ_ONLY=true
+2020-05-15 17:16:03.160 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.awt.printerjob=sun.print.PSPrinterJob
+2020-05-15 17:16:03.161 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.io.unicode.encoding=UnicodeLittle
+2020-05-15 17:16:03.161 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() awt.toolkit=sun.awt.X11.XToolkit
+2020-05-15 17:16:03.161 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() user.home=/usr/share/jigasi
+2020-05-15 17:16:03.161 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.specification.vendor=Oracle Corporation
+2020-05-15 17:16:03.161 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.jabber.DISABLE_COIN=true
+2020-05-15 17:16:03.162 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.neomedia.audioSystem=audiosilence
+2020-05-15 17:16:03.166 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.library.path=/usr/share/jigasi/lib/native/linux-64
+2020-05-15 17:16:03.166 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vendor.url=http://java.oracle.com/
+2020-05-15 17:16:03.166 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.service.audionotifier.AudioNotifierService=org.jitsi.impl.neomedia.notify.AudioNotifierServiceImpl
+2020-05-15 17:16:03.166 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.protocol.MAX_MEDIA_PORT_NUMBER=20000
+2020-05-15 17:16:03.167 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.vendor=Private Build
+2020-05-15 17:16:03.167 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.runtime.name=OpenJDK Runtime Environment
+2020-05-15 17:16:03.173 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.java.command=org.jitsi.jigasi.Main --host=localhost --domain=meeting.com.vn --subdomain=callcontrol --secret=X --logdir=/var/log/jitsi --configdir=/etc/jitsi --configdirname=jigasi
+2020-05-15 17:16:03.173 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.class.path=/usr/share/jigasi/jigasi.jar:/usr/share/jigasi/lib/agafua-syslog-0.4.jar:/usr/share/jigasi/lib/animal-sniffer-annotations-1.17.jar:/usr/share/jigasi/lib/annotations-15.0.jar:/usr/share/jigasi/lib/api-common-1.7.0.jar:/usr/share/jigasi/lib/bccontrib-1.0.jar:/usr/share/jigasi/lib/bcpkix-jdk15on-1.54.jar:/usr/share/jigasi/lib/bcprov-jdk15on-1.54.jar:/usr/share/jigasi/lib/callstats-java-sdk-5.0.0.jar:/usr/share/jigasi/lib/cglib-nodep-2.2.jar:/usr/share/jigasi/lib/checker-qual-2.5.2.jar:/usr/share/jigasi/lib/commons-codec-1.9.jar:/usr/share/jigasi/lib/commons-compress-1.18.jar:/usr/share/jigasi/lib/commons-lang3-3.1.jar:/usr/share/jigasi/lib/commons-logging-1.2.jar:/usr/share/jigasi/lib/concurrentlinkedhashmap-lru-1.0_jdk5.jar:/usr/share/jigasi/lib/core-2.0.1.jar:/usr/share/jigasi/lib/dbus-java-2.7.jar:/usr/share/jigasi/lib/debug-1.1.1.jar:/usr/share/jigasi/lib/dnsjava-2.1.7.jar:/usr/share/jigasi/lib/dnssecjava-1.1.jar:/usr/share/jigasi/lib/dom4j-1.6.1.jar:/usr/share/jigasi/lib/error_prone_annotations-2.2.0.jar:/usr/share/jigasi/lib/failureaccess-1.0.jar:/usr/share/jigasi/lib/fmj-1.0-20190327.151046-25.jar:/usr/share/jigasi/lib/gax-1.34.0.jar:/usr/share/jigasi/lib/gax-grpc-1.34.0.jar:/usr/share/jigasi/lib/gax-httpjson-0.51.0.jar:/usr/share/jigasi/lib/google-api-client-1.24.1.jar:/usr/share/jigasi/lib/google-api-services-translate-v2-rev51-1.24.1.jar:/usr/share/jigasi/lib/google-auth-library-credentials-0.11.0.jar:/usr/share/jigasi/lib/google-auth-library-oauth2-http-0.11.0.jar:/usr/share/jigasi/lib/google-cloud-core-1.50.0.jar:/usr/share/jigasi/lib/google-cloud-core-grpc-1.50.0.jar:/usr/share/jigasi/lib/google-cloud-core-http-1.50.0.jar:/usr/share/jigasi/lib/google-cloud-speech-0.68.0-beta.jar:/usr/share/jigasi/lib/google-cloud-translate-1.50.0.jar:/usr/share/jigasi/lib/google-http-client-1.24.1.jar:/usr/share/jigasi/lib/google-http-client-appengine-1.24.1.jar:/usr/share/jigasi/lib/google-http-client-jackson2-1.24.1.jar:/usr/share/jigasi/lib/google-oauth-client-1.24.1.jar:/usr/share/jigasi/lib/grpc-auth-1.15.0.jar:/usr/share/jigasi/lib/grpc-context-1.15.0.jar:/usr/share/jigasi/lib/grpc-core-1.15.0.jar:/usr/share/jigasi/lib/grpc-netty-shaded-1.15.0.jar:/usr/share/jigasi/lib/grpc-protobuf-1.15.0.jar:/usr/share/jigasi/lib/grpc-protobuf-lite-1.15.0.jar:/usr/share/jigasi/lib/grpc-stub-1.15.0.jar:/usr/share/jigasi/lib/gson-2.3.1.jar:/usr/share/jigasi/lib/guava-27.0-jre.jar:/usr/share/jigasi/lib/hexdump-0.2.1.jar:/usr/share/jigasi/lib/httpclient-4.4.jar:/usr/share/jigasi/lib/httpcore-4.4.jar:/usr/share/jigasi/lib/httpmime-4.4.jar:/usr/share/jigasi/lib/ice4j-2.0.0-20190509.132540-35.jar:/usr/share/jigasi/lib/j2objc-annotations-1.1.jar:/usr/share/jigasi/lib/jackson-core-2.9.2.jar:/usr/share/jigasi/lib/jain-sip-ri-ossonly-1.2.98c7f8c-jitsi-oss1.jar:/usr/share/jigasi/lib/java-dogstatsd-client-2.5.jar:/usr/share/jigasi/lib/java-sdp-nist-bridge-1.2.jar:/usr/share/jigasi/lib/javax.servlet-api-3.1.0.jar:/usr/share/jigasi/lib/jbosh-0.9.1.jar:/usr/share/jigasi/lib/jcip-annotations-1.0.jar:/usr/share/jigasi/lib/jcl-core-2.8.jar:/usr/share/jigasi/lib/jetty-client-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-http-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-io-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-proxy-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-security-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-server-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-servlet-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-util-9.4.15.v20190215.jar:/usr/share/jigasi/lib/jetty-webapp-7.0.1.v20091125.jar:/usr/share/jigasi/lib/jetty-xml-7.0.1.v20091125.jar:/usr/share/jigasi/lib/jicoco-1.1-20190509.130302-15.jar:/usr/share/jigasi/lib/jitsi-android-osgi-1.0-20190327.160432-3.jar:/usr/share/jigasi/lib/jitsi-argdelegation-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-certificate-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-configuration-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-contactlist-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-credentialsstorage-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-desktoputil-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-dns-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-dnsservice-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-fileaccess-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-globaldisplaydetails-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-hid-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-lgpl-dependencies-1.1-20190327.160813-5.jar:/usr/share/jigasi/lib/jitsi-muc-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-neomedia-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-netaddr-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-notification-service-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-packetlogging-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-protocol-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-protocol-jabber-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-protocol-media-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-protocol-sip-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-reconnect-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-resourcemanager-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-stats-1.0-20190407.140545-7.jar:/usr/share/jigasi/lib/jitsi-sysactivity-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-systray-service-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-ui-service-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-util-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-utils-1.0-20190401.122850-7.jar:/usr/share/jigasi/lib/jitsi-version-2.13.3ee5751.jar:/usr/share/jigasi/lib/jitsi-xmpp-extensions-1.0-20190411.124339-4.jar:/usr/share/jigasi/lib/jna-4.1.0.jar:/usr/share/jigasi/lib/jnsapi-0.0.3-jitsi-smack4.2-3.jar:/usr/share/jigasi/lib/joda-time-2.9.2.jar:/usr/share/jigasi/lib/jose4j-0.5.1.jar:/usr/share/jigasi/lib/json-20180130.jar:/usr/share/jigasi/lib/json-simple-1.1.1.jar:/usr/share/jigasi/lib/jsr305-3.0.2.jar:/usr/share/jigasi/lib/jxmpp-core-0.6.2.jar:/usr/share/jigasi/lib/jxmpp-jid-0.6.2.jar:/usr/share/jigasi/lib/jxmpp-util-cache-0.6.2.jar:/usr/share/jigasi/lib/laf-widget-4.0.jar:/usr/share/jigasi/lib/libidn-1.15.jar:/usr/share/jigasi/lib/libjitsi-1.0-20190412.160239-384.jar:/usr/share/jigasi/lib/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar:/usr/share/jigasi/lib/log4j-api-2.3.jar:/usr/share/jigasi/lib/log4j-core-2.3.jar:/usr/share/jigasi/lib/object-cloner-0.1.jar:/usr/share/jigasi/lib/objenesis-2.1.jar:/usr/share/jigasi/lib/okhttp-3.9.1.jar:/usr/share/jigasi/lib/okio-1.13.0.jar:/usr/share/jigasi/lib/opencensus-api-0.15.0.jar:/usr/share/jigasi/lib/opencensus-contrib-grpc-metrics-0.12.3.jar:/usr/share/jigasi/lib/opencensus-contrib-http-util-0.15.0.jar:/usr/share/jigasi/lib/orange-extensions-1.3.0.jar:/usr/share/jigasi/lib/org.apache.felix.framework-4.4.0.jar:/usr/share/jigasi/lib/org.apache.felix.main-4.4.0.jar:/usr/share/jigasi/lib/org.osgi.core-4.3.1.jar:/usr/share/jigasi/lib/protobuf-java-3.6.1.jar:/usr/share/jigasi/lib/protobuf-java-util-3.6.1.jar:/usr/share/jigasi/lib/proto-google-cloud-speech-v1-0.33.0.jar:/usr/share/jigasi/lib/proto-google-cloud-speech-v1beta1-0.33.0.jar:/usr/share/jigasi/lib/proto-google-cloud-speech-v1p1beta1-0.33.0.jar:/usr/share/jigasi/lib/proto-google-common-protos-1.12.0.jar:/usr/share/jigasi/lib/proto-google-iam-v1-0.12.0.jar:/usr/share/jigasi/lib/sdes4j-1.1.3.jar:/usr/share/jigasi/lib/sdp-api-1.0.jar:/usr/share/jigasi/lib/sip-api-1.2-1.2.jar:/usr/share/jigasi/lib/slf4j-api-1.7.26.jar:/usr/share/jigasi/lib/slf4j-jdk14-1.7.26.jar:/usr/share/jigasi/lib/slf4j-simple-1.6.1.jar:/usr/share/jigasi/lib/smack-bosh-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-core-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-experimental-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-extensions-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-im-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-java7-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-legacy-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-resolver-javax-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-sasl-javax-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/smack-tcp-4.2.4-47d17fc.jar:/usr/share/jigasi/lib/threetenbp-1.3.3.jar:/usr/share/jigasi/lib/tinder-1.2.3.jar:/usr/share/jigasi/lib/unix-0.5.1.jar:/usr/share/jigasi/lib/vorbis-java-core-0.8.jar:/usr/share/jigasi/lib/weupnp-0.1.4.jar:/usr/share/jigasi/lib/xml-apis-1.0.b2.jar:/usr/share/jigasi/lib/xmlpull-1.1.3.4a.jar:/usr/share/jigasi/lib/xpp3-1.1.4c.jar:/usr/share/jigasi/lib/zrtp4j-light-4.1.0-jitsi-1-20190327.161225-1.jar
+2020-05-15 17:16:03.173 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.SC_LOG_DIR_LOCATION=/var/log/jitsi
+2020-05-15 17:16:03.173 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.specification.name=Java Virtual Machine Specification
+2020-05-15 17:16:03.173 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.SC_HOME_DIR_LOCATION=/etc/jitsi
+2020-05-15 17:16:03.173 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.media.DISABLE_AUDIO_SUPPORT=false
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.specification.version=1.8
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.cpu.endian=little
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() sun.os.patch.level=unknown
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.io.tmpdir=/tmp
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.media.MAX_PORT_NUMBER=20000
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vendor.url.bug=http://bugreport.sun.com/bugreport/
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.SC_CACHE_DIR_LOCATION=/var/log/jitsi
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() os.arch=amd64
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.awt.graphicsenv=sun.awt.X11GraphicsEnvironment
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.ext.dirs=/usr/lib/jvm/java-8-openjdk-amd64/jre/lib/ext:/usr/java/packages/lib/ext
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() user.dir=/
+2020-05-15 17:16:03.174 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() line.separator=
+
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.vm.name=OpenJDK 64-Bit Server VM
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.impl.neomedia.device.PulseAudioSystem.disabled=true
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.impl.neomedia.device.PortAudioSystem.disabled=true
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() file.encoding=UTF-8
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.neomedia.video.maxbandwidth=2147483647
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() java.specification.version=1.8
+2020-05-15 17:16:03.175 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.SC_HOME_DIR_NAME=jigasi
+2020-05-15 17:16:03.181 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() Normal classloader
+2020-05-15 17:16:03.182 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() failed to find jitsi-defaults.properties with class loader, will continue without it.
+2020-05-15 17:16:03.183 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() Normal classloader
+2020-05-15 17:16:03.183 INFO: [10] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() failed to find jitsi-default-overrides.properties with class loader, will continue without it.
+2020-05-15 17:16:03.196 SEVERE: [10] impl.configuration.ConfigurationActivator.log() Error creating c lib instance for fixing file permissions
+java.nio.file.FileSystemException: /etc/jitsi/jigasi: Operation not permitted
+	at sun.nio.fs.UnixException.translateToIOException(UnixException.java:91)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:102)
+	at sun.nio.fs.UnixException.rethrowAsIOException(UnixException.java:107)
+	at sun.nio.fs.UnixFileAttributeViews$Posix.setMode(UnixFileAttributeViews.java:238)
+	at sun.nio.fs.UnixFileAttributeViews$Posix.setPermissions(UnixFileAttributeViews.java:260)
+	at java.nio.file.Files.setPosixFilePermissions(Files.java:2045)
+	at net.java.sip.communicator.impl.configuration.ConfigurationActivator.fixPermissions(ConfigurationActivator.java:167)
+	at net.java.sip.communicator.impl.configuration.ConfigurationActivator.start(ConfigurationActivator.java:88)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:307)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+2020-05-15 17:16:03.204 INFO: [10] impl.resources.ResourceManagementActivator.start().81 Resource manager STARTED
+2020-05-15 17:16:03.212 INFO: [10] impl.resources.ResourceManagementActivator.start().90 Resource manager REGISTERED
+2020-05-15 17:16:03.213 INFO: [10] impl.dns.DnsUtilActivator.start().118 DNS service ... [STARTING]
+2020-05-15 17:16:03.266 INFO: [10] util.NetworkUtils.<clinit>().117 java.net.preferIPv6Addresses=null
+2020-05-15 17:16:03.266 INFO: [10] util.NetworkUtils.<clinit>().118 java.net.preferIPv4Stack=null
+2020-05-15 17:16:03.280 INFO: [10] impl.dns.DnsUtilActivator.start().144 ParallelResolver ... [REGISTERED]
+2020-05-15 17:16:03.280 INFO: [10] impl.dns.DnsUtilActivator.start().158 DNS service ... [STARTED]
+2020-05-15 17:16:03.587 INFO: [10] impl.netaddr.NetworkAddressManagerServiceImpl.start().92 Network Address Manager         ...[  STARTED ]
+2020-05-15 17:16:03.591 INFO: [11] impl.netaddr.NetworkConfigurationWatcher.checkNetworkInterfaces().398 Currently Active ens33:[/10.10.109.50]
+2020-05-15 17:16:03.592 INFO: [10] impl.netaddr.NetworkAddressManagerServiceImpl.start().98 Network Address Manager Service ...[REGISTERED]
+2020-05-15 17:16:03.603 INFO: [11] impl.dns.DnsUtilActivator.logDNSServers().293 Loading or Reloading resolver config, default DNS servers are: 210.245.113.75, 
+2020-05-15 17:16:03.820 INFO: [10] impl.packetlogging.PacketLoggingActivator.start().100 Packet Logging Service ...[REGISTERED]
+2020-05-15 17:16:03.822 INFO: [10] service.notification.NotificationServiceActivator.start().48 Notification Service...[  STARTED ]
+2020-05-15 17:16:03.828 INFO: [10] service.notification.NotificationServiceActivator.start().55 Notification Service ...[REGISTERED]
+2020-05-15 17:16:04.664 SEVERE: [10] org.jitsi.impl.neomedia.device.DeviceConfiguration.log() Failed to register custom Renderer org.jitsi.impl.neomedia.jmfext.media.renderer.audio.PulseAudioRenderer with JMF.
+java.lang.IllegalStateException: audioSystem
+	at org.jitsi.impl.neomedia.jmfext.media.renderer.audio.PulseAudioRenderer.<init>(PulseAudioRenderer.java:156)
+	at org.jitsi.impl.neomedia.jmfext.media.renderer.audio.PulseAudioRenderer.<init>(PulseAudioRenderer.java:136)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.jitsi.impl.neomedia.device.DeviceConfiguration.registerCustomRenderers(DeviceConfiguration.java:1047)
+	at org.jitsi.impl.neomedia.device.DeviceConfiguration.<init>(DeviceConfiguration.java:366)
+	at org.jitsi.impl.neomedia.MediaServiceImpl.<init>(MediaServiceImpl.java:162)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at java.lang.Class.newInstance(Class.java:442)
+	at org.jitsi.impl.libjitsi.LibJitsiImpl$ServiceLock.initializeService(LibJitsiImpl.java:196)
+	at org.jitsi.impl.libjitsi.LibJitsiImpl$ServiceLock.getService(LibJitsiImpl.java:131)
+	at org.jitsi.impl.libjitsi.LibJitsiImpl.getService(LibJitsiImpl.java:91)
+	at org.jitsi.impl.libjitsi.LibJitsiOSGiImpl.getService(LibJitsiOSGiImpl.java:95)
+	at org.jitsi.service.libjitsi.LibJitsi.invokeGetServiceOnImpl(LibJitsi.java:172)
+	at org.jitsi.service.libjitsi.LibJitsi.getMediaService(LibJitsi.java:124)
+	at net.java.sip.communicator.impl.neomedia.NeomediaActivator.start(NeomediaActivator.java:391)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:307)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+2020-05-15 17:16:04.743 INFO: [10] impl.neomedia.NeomediaActivator.start().542 Audio Notifier Service ...[REGISTERED]
+2020-05-15 17:16:04.782 INFO: [10] impl.version.VersionActivator.start().78 Jitsi Version: Jitsi 2.11.0.build.by.SVN
+2020-05-15 17:16:04.830 FINE: [10] plugin.reconnectplugin.ReconnectPluginActivator.start().249 Found 0 already installed providers.
+2020-05-15 17:16:04.944 INFO: [10] org.jitsi.jigasi.JigasiBundleActivator.start().163 initialized SipGateway
+2020-05-15 17:16:04.955 INFO: [10] org.jitsi.jigasi.JigasiBundleActivator.start().201 skipped initialization of TranscriptionGateway
+2020-05-15 17:16:05.035 INFO: [10] org.eclipse.jetty.util.log.initialized() Logging initialized @2637ms to org.eclipse.jetty.util.log.Slf4jLog
+2020-05-15 17:16:05.264 INFO: [10] org.eclipse.jetty.server.Server.doStart() jetty-9.4.15.v20190215; built: 2019-02-15T16:53:49.381Z; git: eb70b240169fcf1abbd86af36482d1c49826fa0b; jvm 1.8.0_252-8u252-b09-1~18.04-b09
+2020-05-15 17:16:05.341 INFO: [24] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: value -1000 will be used for reliableConnectionKeepAliveTimeout stack property
+2020-05-15 17:16:05.341 INFO: [24] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting Stack Thread priority to 10
+2020-05-15 17:16:05.344 WARNING: [24] impl.protocol.sip.SipLogger.logWarning().185 Warning from the JAIN-SIP stackusing default tls security policy
+2020-05-15 17:16:05.355 WARNING: [24] impl.protocol.sip.SipLogger.logWarning().185 Warning from the JAIN-SIP stackUsing default keystore type jks
+2020-05-15 17:16:05.355 WARNING: [24] impl.protocol.sip.SipLogger.logWarning().185 Warning from the JAIN-SIP stackTLS server settings will be inactive - TLS key store will use JVM defaults keyStoreType=jks javax.net.ssl.keyStore=null javax.net.ssl.keyStorePassword=null
+2020-05-15 17:16:05.356 INFO: [24] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: javax.net.ssl.trustStorePassword is null, using the password passed through javax.net.ssl.keyStorePassword
+2020-05-15 17:16:05.356 WARNING: [24] impl.protocol.sip.SipLogger.logWarning().185 Warning from the JAIN-SIP stackUsing default truststore type jks
+2020-05-15 17:16:05.356 WARNING: [24] impl.protocol.sip.SipLogger.logWarning().185 Warning from the JAIN-SIP stackTLS trust settings will be inactive - TLS trust store will use JVM defaults. trustStoreType=jks javax.net.ssl.trustStore=null javax.net.ssl.trustStorePassword=null
+2020-05-15 17:16:05.364 SEVERE: [10] org.ice4j.socket.jdk8.DelegatingServerSocketChannel.<init>() Cannot find method translateInterestOps
+java.lang.NoSuchMethodException: sun.nio.ch.SelChImpl.translateInterestOps(int)
+	at java.lang.Class.getMethod(Class.java:1786)
+	at org.ice4j.socket.jdk8.DelegatingServerSocketChannel.<init>(DelegatingServerSocketChannel.java:97)
+	at org.ice4j.socket.jdk8.MuxingServerSocketChannel.<init>(MuxingServerSocketChannel.java:644)
+	at org.ice4j.socket.jdk8.MuxingServerSocketChannel.openAndBind(MuxingServerSocketChannel.java:300)
+	at org.ice4j.socket.jdk8.MuxServerSocketChannel.openAndBind(MuxServerSocketChannel.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ice4j.socket.MuxServerSocketChannelFactory.openAndBindMuxServerSocketChannel(MuxServerSocketChannelFactory.java:181)
+	at org.jitsi.rest.MuxServerConnector.open(MuxServerConnector.java:170)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:394)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.jitsi.rest.AbstractJettyBundleActivator.doStart(AbstractJettyBundleActivator.java:215)
+	at org.jitsi.rest.AbstractJettyBundleActivator.start(AbstractJettyBundleActivator.java:607)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:307)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+2020-05-15 17:16:05.378 SEVERE: [10] org.ice4j.socket.jdk8.DelegatingServerSocketChannel.<init>() Cannot find method translateInterestOps
+java.lang.NoSuchMethodException: sun.nio.ch.SelChImpl.translateInterestOps(int)
+	at java.lang.Class.getMethod(Class.java:1786)
+	at org.ice4j.socket.jdk8.DelegatingServerSocketChannel.<init>(DelegatingServerSocketChannel.java:97)
+	at org.ice4j.socket.jdk8.MuxServerSocketChannel.<init>(MuxServerSocketChannel.java:110)
+	at org.ice4j.socket.jdk8.MuxingServerSocketChannel.createMuxServerSocketChannel(MuxingServerSocketChannel.java:767)
+	at org.ice4j.socket.jdk8.MuxingServerSocketChannel.openAndBind(MuxingServerSocketChannel.java:305)
+	at org.ice4j.socket.jdk8.MuxServerSocketChannel.openAndBind(MuxServerSocketChannel.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.ice4j.socket.MuxServerSocketChannelFactory.openAndBindMuxServerSocketChannel(MuxServerSocketChannelFactory.java:181)
+	at org.jitsi.rest.MuxServerConnector.open(MuxServerConnector.java:170)
+	at org.eclipse.jetty.server.AbstractNetworkConnector.doStart(AbstractNetworkConnector.java:80)
+	at org.eclipse.jetty.server.ServerConnector.doStart(ServerConnector.java:236)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.eclipse.jetty.server.Server.doStart(Server.java:394)
+	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:68)
+	at org.jitsi.rest.AbstractJettyBundleActivator.doStart(AbstractJettyBundleActivator.java:215)
+	at org.jitsi.rest.AbstractJettyBundleActivator.start(AbstractJettyBundleActivator.java:607)
+	at org.jitsi.impl.osgi.framework.BundleImpl.start(BundleImpl.java:307)
+	at org.jitsi.impl.osgi.framework.launch.FrameworkImpl.startLevelChanged(FrameworkImpl.java:472)
+	at org.jitsi.impl.osgi.framework.startlevel.FrameworkStartLevelImpl$Command.run(FrameworkStartLevelImpl.java:137)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.runInThread(AsyncExecutor.java:122)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor.access$000(AsyncExecutor.java:28)
+	at org.jitsi.impl.osgi.framework.AsyncExecutor$1.run(AsyncExecutor.java:231)
+2020-05-15 17:16:05.389 INFO: [24] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: the sip stack timer gov.nist.javax.sip.stack.timers.DefaultSipTimer has been started
+2020-05-15 17:16:05.401 INFO: [10] org.eclipse.jetty.server.AbstractConnector.doStart() Started MuxServerConnector@22ba3e31{HTTP/1.1,[http/1.1]}{0.0.0.0:8788}
+2020-05-15 17:16:05.401 INFO: [10] org.eclipse.jetty.server.Server.doStart() Started @3030ms
+2020-05-15 17:16:05.402 INFO: [10] org.jitsi.rest.AbstractJettyBundleActivator.start().613 Not starting the Jetty service for org.jitsi.jigasi.rest.TranscriptServerBundleActivator(port=-1)
+2020-05-15 17:16:05.403 WARNING: [10] org.jitsi.jigasi.xmpp.CallControlMucActivator.start().97 MUC call control disabled.
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.OVERRIDE_ENCODINGS=true
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764733.actions.actionType1589537764733.enabled=true
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.VIDEO_CALLING_DISABLED=true
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.USER_ID=2202@192.168.1.170
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.VOICEMAIL_ENABLED=false
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.SILK/24000=0
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.GSM/8000=0
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.PROXY_PORT=5060
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.AMR-WB/16000=750
+2020-05-15 17:16:05.418 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764733.actions.actionType1589537764733.default=true
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.DEFAULT_JVB_ROOM_NAME=siptest
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.SILK/16000=0
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.SERVER_PORT=5060
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.ANONYMOUS_AUTH=false
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.speex/32000=0
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.packetlogging.PACKET_LOGGING_ENABLED=true
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.neomedia.audioSystem.audiosilence.captureDevice_list=["AudioSilenceCaptureDevice", "AudioSilenceCaptureDevice:noTransferData"]
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.SILK/8000=0
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.red/90000=0
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.SingleCallInProgressPolicy.enabled=false
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.IS_FILE_TRANSFER_DISABLED=true
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.telephone-event/8000=1
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.H263-1998/90000=0
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.PROXY_AUTO_CONFIG=false
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.JINGLE_NODES_ENABLED=false
+2020-05-15 17:16:05.419 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.PCMA/8000=600
+2020-05-15 17:16:05.420 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.speex/16000=0
+2020-05-15 17:16:05.420 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.KEEP_ALIVE_INTERVAL=25
+2020-05-15 17:16:05.420 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.USER_ID=jigasi@meeting.com.vn
+2020-05-15 17:16:05.420 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764734.actions.actionType1589537764734=PopupMessageAction
+2020-05-15 17:16:05.420 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.speex/8000=0
+2020-05-15 17:16:05.420 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647=acc1403273890647
+2020-05-15 17:16:05.424 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.service.gui.ALWAYS_TRUST_MODE_ENABLED=true
+2020-05-15 17:16:05.424 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.SILK/12000=0
+2020-05-15 17:16:05.424 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.ACCOUNT_UID=SIP:2202@192.168.1.170
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764734.actions.actionType1589537764734.timeout=-1
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.PROXY_ADDRESS=192.168.1.170
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764734=NewSelectedDevice
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764733=DeviceConfigurationChanged
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.DOMAIN_BASE=meeting.com.vn
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764733.actions.actionType1589537764733=PopupMessageAction
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.KEEP_ALIVE_METHOD=OPTIONS
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.VP8/90000=0
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.neomedia.codec.audio.opus.encoder.COMPLEXITY=10
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.H264/90000=0
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.DEFAULT_ENCRYPTION=false
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.ulpfec/90000=0
+2020-05-15 17:16:05.425 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764733.actions.actionType1589537764733.timeout=-1
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.PCMU/8000=650
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.SERVER_STORED_INFO_DISABLED=true
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.iLBC/8000=10
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.IS_SERVER_OVERRIDDEN=true
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.IM_DISABLED=true
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.ENCRYPTED_PASSWORD=**********
+2020-05-15 17:16:05.426 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.G722/8000=700
+2020-05-15 17:16:05.433 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764734.actions.actionType1589537764734.enabled=true
+2020-05-15 17:16:05.433 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.Encodings.opus/48000=1000
+2020-05-15 17:16:05.434 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.PREFERRED_TRANSPORT=udp
+2020-05-15 17:16:05.434 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.SERVER_ADDRESS=192.168.1.170
+2020-05-15 17:16:05.434 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.notifications.eventType1589537764734.actions.actionType1589537764734.default=true
+2020-05-15 17:16:05.434 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.PROXY_ADDRESS_VALIDATED=true
+2020-05-15 17:16:05.434 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() net.java.sip.communicator.impl.protocol.sip.acc1403273890647.PROTOCOL_NAME=SIP
+2020-05-15 17:16:05.434 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.PASS=**********
+2020-05-15 17:16:05.435 INFO: [1] org.jitsi.impl.configuration.ConfigurationServiceImpl.log() org.jitsi.jigasi.xmpp.acc.SERVER_ADDRESS=127.0.0.1
+2020-05-15 17:16:05.686 WARNING: [39] org.jitsi.jigasi.xmpp.CallControl.<init>().138 Always trust in remote TLS certificates mode is enabled
+2020-05-15 17:16:06.081 INFO: [43] org.jitsi.jigasi.SipGateway.registrationStateChanged().105 REG STATE CHANGE ProtocolProviderServiceSipImpl(2202@192.168.1.170 (SIP)) -> RegistrationStateChangeEvent[ oldState=Unregistered; newState=RegistrationState=Registering; reasonCode=-1; reason=null]
+2020-05-15 17:16:06.237 INFO: [49] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:06.262 INFO: [50] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:06.270 INFO: [51] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:06.294 INFO: [51] org.jitsi.jigasi.SipGateway.registrationStateChanged().105 REG STATE CHANGE ProtocolProviderServiceSipImpl(2202@192.168.1.170 (SIP)) -> RegistrationStateChangeEvent[ oldState=Registering; newState=RegistrationState=Registered; reasonCode=-1; reason=null]
+2020-05-15 17:16:06.295 WARNING: [51] org.jitsi.jigasi.health.SipHealthPeriodicChecker.log() No health check started, no HEALTH_CHECK_SIP_URI prop.
+2020-05-15 17:16:06.311 INFO: [56] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:13.551 INFO: [58] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:13.623 INFO: [58] org.jitsi.jigasi.SipGateway.incomingCallReceived().188 Incoming call received...
+2020-05-15 17:16:13.643 INFO: [60] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:14.641 INFO: [59] org.jitsi.jigasi.SipGatewaySession.run().907 Using default JVB room name property siptest
+2020-05-15 17:16:14.686 INFO: [59] org.jitsi.jigasi.JvbConference.setXmppProvider().561 17217d5983a@meeting.com.vn will use ProtocolProviderServiceJabberImpl(jigasi@meeting.com.vn (Jabber))
+2020-05-15 17:16:14.831 INFO: [62] impl.protocol.jabber.OperationSetBasicTelephonyJabberImpl.registrationStateChanged().125 Jingle : ON 
+2020-05-15 17:16:14.831 INFO: [62] org.jitsi.jigasi.JvbConference.registrationStateChanged().606 XMPP (17217d5983a@meeting.com.vn): RegistrationStateChangeEvent[ oldState=Registering; newState=RegistrationState=Registering; reasonCode=-1; reason=null]
+2020-05-15 17:16:31.287 INFO: [66] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:44.841 SEVERE: [62] org.jitsi.jigasi.JvbConference.registrationStateChanged().600 Connection failed XMPP on 17217d5983a@meeting.com.vn
+2020-05-15 17:16:44.843 INFO: [62] org.jitsi.jigasi.JvbConference.stop().521 17217d5983a@meeting.com.vn is removing account Jabber:17217d5983a@meeting.com.vn/17217d5983a
+2020-05-15 17:16:44.844 INFO: [62] impl.protocol.jabber.OperationSetBasicTelephonyJabberImpl.registrationStateChanged().132 Jingle : OFF 
+2020-05-15 17:16:44.848 INFO: [68] org.jitsi.jigasi.SipGatewaySession.handleCallState().766 SIP call ended: CallPeerChangeEvent: type=CallPeerStatusChange oldV=net.java.sip.communicator.service.protocol.CallPeerState:Incoming Call newV=net.java.sip.communicator.service.protocol.CallPeerState:Disconnected for peer=2001 <2001@192.168.1.170>;status=Disconnected
+2020-05-15 17:16:44.849 INFO: [68] org.jitsi.jigasi.SipGatewaySession.sipCallEnded().507 Sip call ended: Call: id=15895377735611626136203 peers=0
+2020-05-15 17:16:44.849 SEVERE: [68] org.jitsi.jigasi.AbstractGateway.notifyCallEnded().132 Call resource not exists for session 17217d5983a@meeting.com.vn
+2020-05-15 17:16:44.850 INFO: [68] org.jitsi.jigasi.SipGatewaySession.peerStateChanged().828 no-call-ctx SIP peer state: Disconnected
+2020-05-15 17:16:44.858 INFO: [69] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:16:56.283 INFO: [70] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:17:01.682 INFO: [71] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:17:09.422 INFO: [72] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:17:09.442 INFO: [72] org.jitsi.jigasi.SipGateway.incomingCallReceived().188 Incoming call received...
+2020-05-15 17:17:10.449 INFO: [73] org.jitsi.jigasi.SipGatewaySession.run().907 Using default JVB room name property siptest
+2020-05-15 17:17:10.451 INFO: [73] org.jitsi.jigasi.JvbConference.setXmppProvider().561 17217d67243@meeting.com.vn will use ProtocolProviderServiceJabberImpl(jigasi@meeting.com.vn (Jabber))
+2020-05-15 17:17:10.531 INFO: [75] impl.protocol.jabber.OperationSetBasicTelephonyJabberImpl.registrationStateChanged().125 Jingle : ON 
+2020-05-15 17:17:10.531 INFO: [75] org.jitsi.jigasi.JvbConference.registrationStateChanged().606 XMPP (17217d67243@meeting.com.vn): RegistrationStateChangeEvent[ oldState=Registering; newState=RegistrationState=Registering; reasonCode=-1; reason=null]
+2020-05-15 17:17:21.286 INFO: [78] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:17:40.535 SEVERE: [75] org.jitsi.jigasi.JvbConference.registrationStateChanged().600 Connection failed XMPP on 17217d67243@meeting.com.vn
+2020-05-15 17:17:40.535 INFO: [75] org.jitsi.jigasi.JvbConference.stop().521 17217d67243@meeting.com.vn is removing account Jabber:17217d67243@meeting.com.vn/17217d67243
+2020-05-15 17:17:40.536 INFO: [75] impl.protocol.jabber.OperationSetBasicTelephonyJabberImpl.registrationStateChanged().132 Jingle : OFF 
+2020-05-15 17:17:40.540 INFO: [79] org.jitsi.jigasi.SipGatewaySession.handleCallState().766 SIP call ended: CallPeerChangeEvent: type=CallPeerStatusChange oldV=net.java.sip.communicator.service.protocol.CallPeerState:Incoming Call newV=net.java.sip.communicator.service.protocol.CallPeerState:Disconnected for peer=2001 <2001@192.168.1.170>;status=Disconnected
+2020-05-15 17:17:40.540 INFO: [79] org.jitsi.jigasi.SipGatewaySession.sipCallEnded().507 Sip call ended: Call: id=158953782942941605814 peers=0
+2020-05-15 17:17:40.540 SEVERE: [79] org.jitsi.jigasi.AbstractGateway.notifyCallEnded().132 Call resource not exists for session 17217d67243@meeting.com.vn
+2020-05-15 17:17:40.541 INFO: [79] org.jitsi.jigasi.SipGatewaySession.peerStateChanged().828 no-call-ctx SIP peer state: Disconnected
+2020-05-15 17:17:40.545 INFO: [80] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:17:46.285 INFO: [81] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:17:57.073 INFO: [82] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:18:11.288 INFO: [83] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:18:36.287 INFO: [84] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:18:52.467 INFO: [85] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:19:01.291 INFO: [86] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:19:26.287 INFO: [87] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:19:47.861 INFO: [88] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:19:51.291 INFO: [89] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:20:16.290 INFO: [90] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:20:41.289 INFO: [91] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:20:43.251 INFO: [92] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:21:06.289 INFO: [93] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:21:31.291 INFO: [94] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:21:38.648 INFO: [95] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:21:56.296 INFO: [96] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:22:21.299 INFO: [97] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:22:34.039 INFO: [98] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:22:46.292 INFO: [99] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:23:11.305 INFO: [100] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:23:29.431 INFO: [101] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:23:36.295 INFO: [102] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:24:01.296 INFO: [103] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:24:24.822 INFO: [104] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:24:26.296 INFO: [105] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:24:51.296 INFO: [106] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:25:06.278 INFO: [107] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:25:06.285 INFO: [108] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:25:06.290 INFO: [109] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:25:16.306 INFO: [110] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:25:41.301 INFO: [111] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:26:01.675 INFO: [112] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:26:06.299 INFO: [113] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:26:31.301 INFO: [114] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:26:56.310 INFO: [115] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:26:57.067 INFO: [116] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:27:21.301 INFO: [117] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:27:46.302 INFO: [118] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:27:52.456 INFO: [119] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:28:11.303 INFO: [120] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:28:36.303 INFO: [121] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:28:47.845 INFO: [122] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:29:01.304 INFO: [123] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:29:26.304 INFO: [124] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:29:43.244 INFO: [125] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:29:51.309 INFO: [126] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:30:16.305 INFO: [127] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:30:38.645 INFO: [128] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:30:41.306 INFO: [129] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:31:06.307 INFO: [130] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:31:31.308 INFO: [131] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:31:34.041 INFO: [132] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:31:56.308 INFO: [133] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:32:21.309 INFO: [134] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:32:29.438 INFO: [135] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:32:46.311 INFO: [136] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:33:11.315 INFO: [137] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:33:24.835 INFO: [138] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:33:36.318 INFO: [139] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:34:01.312 INFO: [140] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:34:06.296 INFO: [141] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:34:06.311 INFO: [142] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:34:06.315 INFO: [143] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:34:26.317 INFO: [144] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:34:51.815 INFO: [145] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:35:01.702 INFO: [146] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:35:16.316 INFO: [147] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:35:41.313 INFO: [148] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:35:57.099 INFO: [149] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:36:06.315 INFO: [150] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:36:31.317 INFO: [151] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:36:52.493 INFO: [152] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:36:56.314 INFO: [153] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
+2020-05-15 17:37:21.316 INFO: [154] impl.protocol.sip.SipLogger.logInfo().196 Info from the JAIN-SIP stack: Setting SIPMessage peerPacketSource to: /192.168.1.170:5060
